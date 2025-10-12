@@ -2,7 +2,7 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that integrates [Vale](https://vale.sh/) prose linting into AI coding assistants like Claude Code and Gemini command-line tool.
 
-![VS Code MCP Configuration Screenshot](images/vscode-mcp.png)
+![Claude Code Screenshot](images/claude-code.png
 
 ## Overview
 
@@ -82,7 +82,7 @@ See [Claude Code MCP documentation](https://docs.claude.com/en/docs/claude-code/
 
 ### Gemini CLI
 
-![Gemini CLI Screenshot](images/gemini-cli.png)
+![Gemini CLI Screenshot](images/gemini.png)
 
 Add the Vale MCP server to Gemini command-line tool:
 
@@ -103,6 +103,8 @@ gemini mcp list
 Refer to the [Gemini command-line tool MCP documentation](https://github.com/google-gemini/gemini-cli/blob/main/docs/cli/commands.md#mcp) for more details.
 
 ### GitHub Copilot in VS Code
+
+![VS Code MCP Configuration Screenshot](images/vscode-mcp.png)
 
 Add the Vale MCP server using VS Code's Command Palette for a quick, no-config setup:
 
