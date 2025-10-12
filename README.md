@@ -234,6 +234,10 @@ npx tsc --noEmit
 npx tsc --noUnusedLocals --noUnusedParameters --noEmit
 ```
 
+## AI usage disclosure
+
+I've created this project using Claude Code with the Claude 4.5 model.
+
 ## License
 
 This project is licensed under the MIT License. Refer to the [LICENSE](LICENSE) file for details.
