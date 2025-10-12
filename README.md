@@ -2,18 +2,20 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that integrates [Vale](https://vale.sh/) prose linting into AI coding assistants like Claude Code and Gemini command-line tool.
 
+![VS Code MCP Configuration Screenshot](images/vscode-mcp.png)
+
 ## Overview
 
 This MCP server provides AI assistants with the ability to check files for style and grammar issues using Vale's powerful linting engine. It automatically discovers Vale configuration files and provides formatted, actionable feedback about writing quality.
 
 ## Features
 
-- ✅ File Linting: Check any text file for style issues with Vale
-- 🔍 Smart Config Discovery: Automatically finds `.vale.ini` files using Vale's native upward search
-- 🎯 Configuration Priority: Supports `VALE_CONFIG_PATH` environment variable for explicit config
-- 📊 Rich Formatting: Returns markdown-formatted results with emojis and severity grouping
-- 🛡️ Graceful Degradation: Provides helpful installation guidance when Vale isn't installed
-- 🐛 Debug Mode: Optional debug logging for troubleshooting
+- ✅ File linting: Check any text file for style issues with Vale.
+- 🔍 Smart config discovery: Automatically finds `.vale.ini` files using Vale's native upward search.
+- 🎯 Configuration priority: Supports `VALE_CONFIG_PATH` environment variable for explicit config.
+- 📊 Rich formatting: Returns markdown-formatted results with emojis and severity grouping.
+- 🛡️ Graceful degradation: Provides helpful installation guidance when Vale isn't installed.
+- 🐛 Debug mode: Optional debug logging for troubleshooting.
 
 ## System requirements
 
@@ -51,6 +53,8 @@ The Vale MCP server can be integrated with AI coding assistants that support the
 
 ### Claude Code
 
+![Claude Code Screenshot](images/claude-code.png)
+
 Add the Vale MCP server to Claude Code using stdio transport:
 
 ```bash
@@ -78,6 +82,8 @@ See [Claude Code MCP documentation](https://docs.claude.com/en/docs/claude-code/
 
 ### Gemini CLI
 
+![Gemini CLI Screenshot](images/gemini-cli.png)
+
 Add the Vale MCP server to Gemini command-line tool:
 
 ```bash
@@ -100,9 +106,9 @@ Refer to the [Gemini command-line tool MCP documentation](https://github.com/goo
 
 Add the Vale MCP server using VS Code's Command Palette for a quick, no-config setup:
 
-1. Open Command Palette: Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac)
+1. Open the command palette: press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (Mac).
 
-2. Run Command: Type `MCP: Add Server` and select it
+2. Run Command: Type `MCP: Add Server` and select it.
 
 3. Provide Server Information:
    - Name: `vale` (or any name you prefer)
@@ -125,7 +131,6 @@ Verify in VS Code:
 - "Check docs/guide.md using Vale"
 - "Lint this markdown file: @README.md"
 - "What style issues does Vale find in the documentation?"
-
 
 ## Available tools
 
