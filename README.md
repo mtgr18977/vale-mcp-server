@@ -2,7 +2,7 @@
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that integrates [Vale](https://vale.sh/) prose linting into AI coding assistants like Claude Code and Gemini command-line tool.
 
-![Claude Code Screenshot](images/claude-code.png
+![Claude Code Screenshot](images/claude-code.png)
 
 ## Overview
 
