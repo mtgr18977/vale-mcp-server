@@ -1,0 +1,47 @@
+{
+  "name": "vale-mcp-server",
+  "version": "0.5.0",
+  "description": "MCP server for Vale linting integration",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "vale-mcp-server": "build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "node build/index.js",
+    "install:global": "npm link",
+    "uninstall:global": "npm unlink -g vale-mcp-server",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "vale",
+    "linting",
+    "documentation",
+    "style-guide"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "files": [
+    "build",
+    "README.md",
+    "QUICKSTART.md",
+    ".vale.ini.example"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vale-mcp-server.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}
