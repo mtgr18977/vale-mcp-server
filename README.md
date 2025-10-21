@@ -1,3 +1,5 @@
+[![CI](https://github.com/dgetun/vale-mcp-server/actions/workflows/ci.yml/badge.svg)](https://github.com/dgetun/vale-mcp-server/actions/workflows/ci.yml) [![npm version](https://badge.fury.io/js/vale-mcp-server.svg)](https://badge.fury.io/js/vale-mcp-server) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Vale MCP Server
 
 A [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that integrates [Vale](https://vale.sh/) prose linting into AI coding assistants like Claude Code and Gemini command-line tool.
@@ -213,7 +215,7 @@ vale-mcp-server/
 └── README.md           # This file
 ```
 
-### Building for development
+### Development Commands
 
 ```bash
 # Install dependencies
@@ -222,18 +224,14 @@ npm install
 # Build TypeScript
 npm run build
 
-# Or use Make
-make build
-```
+# Lint the project
+npm run lint
 
-### Linting
+# Run tests
+npm run test
 
-```bash
-# TypeScript compilation check
-npx tsc --noEmit
-
-# Strict unused code check
-npx tsc --noUnusedLocals --noUnusedParameters --noEmit
+# Run CI checks (lint and test)
+npm run ci
 ```
 
 ## AI usage disclosure
