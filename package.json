@@ -13,7 +13,10 @@
     "start": "node build/index.js",
     "install:global": "npm link",
     "uninstall:global": "npm unlink -g vale-mcp-server",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "lint": "tsc --noEmit",
+    "test": "node --test",
+    "ci": "npm run lint && npm run test"
   },
   "keywords": [
     "mcp",
